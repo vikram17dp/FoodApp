@@ -1,0 +1,111 @@
+.cart {
+    margin-top: 100px;
+}
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    color: gray;
+    align-items: center;
+    font-size: max(1vw, 12px);
+}
+.cart-items-item {
+    color: black;
+    margin: 10px 0px;
+}
+.cart-items-item img {
+    width: 50px;
+    border-radius: 10px;
+}
+.cart hr {
+    height: 0.54px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.cart-items-item .cross {
+    cursor: pointer;
+}
+.cart-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px);
+}
+.cart-total {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* margin-bottom: 10px; */
+}
+.cart-total h2{
+    margin-bottom: 15px;
+}
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    margin-bottom: 10px;
+}
+.cart-total hr {
+    margin: 10px 0px;
+}
+.cart-total button {
+    border: none;
+    color: white;
+    background-color: tomato;
+    padding: 12px 0px;
+    width: max(15vw, 200px);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cart-promocode {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.cart-promocode p {
+    color: #555;
+}
+.cart-promocode-input {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    background-color: #eaeaea;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.cart-promocode-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.cart-promocode-input button {
+    width: max(10vw, 150px);
+    padding: 12px 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+@media (max-width: 750px) {
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+    .cart-promocode {
+        justify-content: start;
+        margin-bottom: 20px;
+    }
+    .cart-items-item img{
+        width: 30px;
+    }
+    .cart-items-item{
+       padding-right: 15px;
+    }
+    .cart-items-item .cross{
+        padding-left: 10px;
+    }
+    .cart-items-title .quantity{
+        padding-right: 10px;
+    }
+}
